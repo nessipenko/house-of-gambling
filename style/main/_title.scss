@@ -1,0 +1,43 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 41%;
+    margin-right: 2vw;
+    z-index: 10;
+
+    h1 {
+        font-weight: 500;
+        font-size: 5vw;
+        line-height: 5vw;
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    p {
+        margin-top: 1.25vw;
+        font-weight: 500;
+        font-size: 1.5vw;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+
+    &__button {
+        margin-top: 2.5vw;
+        background-color: $main-color;
+        border: none;
+        border-radius: 48px;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        width: 62%;
+        height: 72px;
+        font-size: 1.25vw;
+
+    }
+}

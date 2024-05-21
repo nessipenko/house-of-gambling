@@ -1,0 +1,75 @@
+.chips {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    width: 22%;
+
+    &__wrapper {
+        position: relative;
+        width: 100px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+    &__img {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+        top: 0;
+        animation-duration: 25s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        img {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+    #wrapper1 .chips__img,
+    #wrapper3 .chips__img {
+        animation-name: scrollUp;
+    }
+
+    #wrapper2 .chips__img {
+        animation-name: scrollDown;
+    }
+
+    @keyframes scrollUp {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
+    @keyframes scrollDown {
+        0% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+#wrapper1 {
+    opacity: 0.2;
+}
+
+#wrapper2 {
+    opacity: 0.6;
+    margin: 0 0.7vw;
+}
+
+#wrapper3 {
+    opacity: 0.4;
+}

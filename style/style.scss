@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import './variables';
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    color: #fff;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #110A1D;
+    overflow: hidden;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+}
+
+.showup {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.light {
+    &__left {
+        position: absolute;
+        width: 226.46px;
+        height: 1302.47px;
+        background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.4) 100%);
+        opacity: 0.55;
+        filter: blur(150px);
+        transform: rotate(-54.31deg);
+        z-index: 3;
+        top: 0px;
+    }
+
+    &__right {
+        position: absolute;
+        width: 574px;
+        height: 574px;
+        left: calc(50% - 574px/2 + 832px);
+        top: 570px;
+        background: linear-gradient(255.96deg, #478BF9 0%, #9DADF2 100%);
+        opacity: 0.7;
+        filter: blur(325px);
+        z-index: 5;
+    }
+
+    &__down {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        left: 0;
+        bottom: 130px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 53.64%, rgba(255, 255, 255, 0) 95.45%);
+        z-index: 2;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@import './header/header';
+@import './main/main';
+@import './main/title';
+@import './main/chips';
+@import './main/blog';
+@import './footer/footer'

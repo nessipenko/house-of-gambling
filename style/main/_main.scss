@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    overflow: hidden;
+    animation: fadeIn 3s;
+
+}
